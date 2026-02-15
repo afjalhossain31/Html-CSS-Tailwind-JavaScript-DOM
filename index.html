@@ -6,11 +6,11 @@
         <title>Tour of Dom</title>
         <link rel="stylesheet" href="styles/style.css">
         <script src="js/hello.js"></script>
-        
+
     </head>
     <body>
         <header>
-            <h1>Tour of Dom</h1>
+            <h1>Tour of Document Object Model (DOM)</h1>
         </header>
         <main>
             <h2>Welcome to the Tour of Dom!</h2>
@@ -20,13 +20,36 @@
                 <li>Practice Dom</li>
                 <li>Learn JavaScript</li>
                 <li>build a website</li>
+                <li>build a website</li>
             </ul>
         </main>
 
         <!-- Javascript -->
-    <script>
-        console.log("Welcome to the Tour of Dom!");
-        console.log("This is a simple JavaScript code to demonstrate DOM manipulation.");
+        <script>
+        // console.log("Document Object Model (DOM).");
+
+        const student = {
+            name: "Afjal Hossain",
+            age: 25,
+            study: function(subject){
+                console.log("I am studying JavaScript.", subject);
+            }
+        }
+
+        // document.getElementByTagname
+        const licollection = document.getElementsByTagName("li");
+        // console.log(licollection);
+
+        for(const li of licollection){
+            console.log(li.innerText); // innerText is a property of the li element that returns the text content of the element.
+        }
+        //All h1 tag
+        const allheadings = document.getElementsByTagName("h1");
+        for(const heading of allheadings){
+            console.log(heading);
+            console.log(heading.innerText); //vitore text ta dekhabe
+        }
+
     </script>
 
     </body>
