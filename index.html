@@ -15,6 +15,12 @@
         <main>
             <h2>Welcome to the Tour of Dom!</h2>
 
+            <h3>Student Information</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, atque!</p>
+            <h3>Student List</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, iste?</p>
+
+
             <ul>
                 <li>Afjal Hossain</li>
                 <li>Practice Dom</li>
@@ -48,6 +54,18 @@
         for(const heading of allheadings){
             console.log(heading);
             console.log(heading.innerText); //vitore text ta dekhabe
+        }
+        //all p tag
+        const allparagraphs = document.getElementsByTagName("p");
+        for(const paragraph of allparagraphs){
+            console.log(paragraph);
+            console.log(paragraph.innerText);
+        }
+        //all h3 tag 
+        const allh3 = document.getElementsByTagName("h3");
+        for(const h3 of allh3){
+            console.log(h3);
+            console.log(h3.innerText);
         }
 
     </script>
