@@ -9,9 +9,21 @@
 
     </head>
     <body>
+     
         <header>
             <h1>Tour of Document Object Model (DOM)</h1>
         </header>
+
+        <section>
+            <h1 id="food-title">Food I love</h1>
+            <ul>
+                <li class="item">Pizza</li>
+                <li class="item">Burger</li>
+                <li class="item">Fried Rice</li>
+                <li class="item">Chicken Curry</li>
+            </ul>
+        </section>
+
         <main>
             <h2>Welcome to the Tour of Dom!</h2>
 
@@ -66,6 +78,16 @@
         for(const h3 of allh3){
             console.log(h3);
             console.log(h3.innerText);
+        }
+        //get by id 
+        const foodtitle =document.getElementById("food-title");
+        console.log(foodtitle.innerText);
+        foodtitle.innerText = "Food I love to eat"; //console te food i love to eat dekhabe
+        //get by class name
+        const items = document.getElementsByClassName("item");
+        console.log(items);
+        for(const item of items){
+            console.log(item.innerText);
         }
 
     </script>
