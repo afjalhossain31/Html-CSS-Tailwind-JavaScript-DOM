@@ -5,7 +5,7 @@ console.log("connected to the my css file using javascript");
 const sections= document.querySelectorAll("section"); 
 // console.log(sections);
 for(const section of sections){
-    console.log(section);
+    // console.log(section);
     section.style.backgroundColor="lightblue";
     section.style.border="2px solid green";
     section.style.padding="10px";
@@ -15,9 +15,16 @@ for(const section of sections){
     section.style.fontFamily="Arial, sans-serif";
 }
 
-// css er modde style add kore just kon section niye kaj korte chai oita dite hobe tahole oi oita kaj korbe 
+// css er modde style add kore just kon section niye kaj korte chai oita dite hobe tahole oi oita kaj korbe
 // for( const section of sections){
 //     section.classList.add("player-section");}
+
+
+// document.getElementById("players-container").childNodes[1]
+// document.getElementById("players-container").children[0]
+//document.getElementById("players-container").childNodes[3].childNodes[1].style.color="red";
+
+
 
 
 
