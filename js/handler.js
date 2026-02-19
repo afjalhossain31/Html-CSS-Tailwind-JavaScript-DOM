@@ -26,6 +26,8 @@ document.getElementById("btn-update").addEventListener("click", function () {
   nameP.innerText = name;
 });
 
+//<button id="btn-login">Login</button>
+
 // document.getElementById("btn-login").addEventListener("click", function () {
 //   const email = prompt("Enter your email:");
 //   const password = prompt("Enter your password:");
