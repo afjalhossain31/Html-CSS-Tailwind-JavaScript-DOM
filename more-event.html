@@ -29,16 +29,25 @@
             .addEventListener('mouseout', function () {
                 console.log('Mouse is outing the button');
             })
-        */
 
         document.getElementById('user-name')
-            .addEventListener('input', function () { 
+            .addEventListener('focus', function () { 
                 console.log('User about to write name');
             })
         document.getElementById('user-email')
-            .addEventListener('input', function () { 
-                console.log('User about to write email');
+            .addEventListener('blur', function () { 
+                console.log('User finished writing email');
             })
+        document.getElementById('user-name').addEventListener('keydown', function(event){
+        console.log('Typing :', event.target.value);
+    })
+
+        */
+
+    document.getElementById('user-name').addEventListener('keyup', function(event){
+        console.log('Typing :', event.target.value);
+    })
+
 
 
     </script>
