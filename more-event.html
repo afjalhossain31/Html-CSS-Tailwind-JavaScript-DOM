@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>More Events</title>
 </head>
+
 <body>
+    <button id="btn-mouse">Micky mouse minnie</button>
+    <input id="user-name" placeholder="your name" type="text">
+    <input id="user-email" placeholder="your email" type="text">
+
+    <p>6 Explore more event type and Simple github like delete confirmation button</p>
     
+    <script>
+        /*
+        document.getElementById('btn-mouse')
+            .addEventListener('mouseenter', function () {
+                console.log('Mouse is over the button');
+            })
+        
+        document.getElementById('btn-mouse')
+            .addEventListener('mousemove', function () {
+                console.log('Mouse is moving over the button');
+            })
+        document.getElementById('btn-mouse')
+            .addEventListener('mouseout', function () {
+                console.log('Mouse is outing the button');
+            })
+        */
+
+        document.getElementById('user-name')
+            .addEventListener('input', function () { 
+                console.log('User about to write name');
+            })
+        document.getElementById('user-email')
+            .addEventListener('input', function () { 
+                console.log('User about to write email');
+            })
+
+
+    </script>
+
 </body>
+
 </html>
