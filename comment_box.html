@@ -20,7 +20,7 @@
     <h1> My Awesome Comment Box. Write your comments below:</h1>
     <section>
         <h3>Comments Box</h3>
-        <div>
+        <div id="comment-container">
             <!-- p.comment*3>lorem30 -->
             <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam deserunt, distinctio
                 eos quidem cumque iusto! Et accusantium placeat assumenda necessitatibus doloremque repellendus.
@@ -45,19 +45,12 @@
     </section>
 
     <script>
-        //Steps number 1 : set an event handler to the button
-        document.getElementById('btn-post-comment').addEventListener('click', function () {
-            //console.log('Button clicked');
-            //step-2: get the text written in the text area
-
-            const commentTextBox = document.getElementById('comment-text-box');
-
-            const newComment = commentTextBox.value;
-            console.log(newComment);
-        })
+        
 
     </script>
 
+
+    <script src="js/commentBox.js"></script>
 </body>
 
 </html>
