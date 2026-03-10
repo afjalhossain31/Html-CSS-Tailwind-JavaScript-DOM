@@ -34,3 +34,8 @@ function readObjectFromLS() {
     console.log(customer.name);
 }
 
+function clearLocalStorage() {
+    localStorage.clear();
+    console.log('Local Storage cleared!');
+}
+
